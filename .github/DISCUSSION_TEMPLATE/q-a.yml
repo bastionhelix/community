@@ -1,0 +1,47 @@
+title: "[Question] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking. A clear question gets a faster answer.
+        **Please don't share anything private here** (customer data, site URLs, tokens or passwords). For private help, email support@bastionhelix.com.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - Bastion Helix for Jira
+        - Something else
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part? (Jira app)
+      description: Skip this if your question isn't about the Jira app.
+      options:
+        - Charts & dashboards
+        - Time tracking
+        - Budgets & cost
+        - Diagrams
+        - Workflow automation
+        - Email to issue
+        - Workforce Intelligence (AI spend)
+        - Install, permissions or billing
+        - Not sure
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you've tried
+      description: Steps you took and what happened. Screenshots help, but hide anything private first.
+    validations:
+      required: false
