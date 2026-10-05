@@ -1,0 +1,37 @@
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Before posting, search the Ideas category; if someone suggested it already, add a 👍 there instead. Ideas with the most votes get looked at first.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - Bastion Helix for Jira
+        - A new app or tool
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What's hard or slow today? Who on your team runs into it?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How you handle it now
+      description: Any workaround or other tool you use today.
+    validations:
+      required: false
